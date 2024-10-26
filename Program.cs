@@ -6,17 +6,18 @@ namespace CnLINQ_Projection
 {
   class Student
   {
-    public string Neptun;
-    public string Name;
-    public string email;
-    public double Average;
-    public Student(string Neptun, string Name, string email,
-     double Average)
+		public string Neptun { get; set; }
+		public string Name { get; set; }
+		public string Email { get; set; }
+		public double Average { get; set; }
+
+		public Student(string neptun, string name, string email,
+     double average)
     {
-      this.Neptun = Neptun;
-      this.Name = Name;
-      this.email = email;
-      this.Average = Average;
+      Neptun = neptun;
+      Name = name;
+      Email = email;
+      Average = average;
     }
   }
   class ProjectionProgram
@@ -24,10 +25,10 @@ namespace CnLINQ_Projection
     static List<Student> Students = new List<Student>();
     static void Seed()
     {
-      Students.Add(new Student("ACRESC", "A B", "x@net.hu", 2.25));
-      Students.Add(new Student("ZHU234", "C B", "y@net.hu", 4.25));
-      Students.Add(new Student("DBGTRZ", "D B", "z@net.hu", 3.45));
-      Students.Add(new Student("RFCMJW", "E B", "t@net.hu", 3.55));
+      Students.Add(new Student("ACRESC", "Anne Boer", "x@net.net", 2.25));
+      Students.Add(new Student("ZHU234", "Cecil Button", "y@net.net", 4.25));
+      Students.Add(new Student("DBGTRZ", "Debra Coelho", "z@net.net", 3.45));
+      Students.Add(new Student("RFCMJW", "Emil Zoone", "t@net.net", 3.55));
     }
     static void Main(string[] args)
     {
