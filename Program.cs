@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CnLINQ_Projection
+namespace Cn_LINQ_Projection
 {
   class Student
   {
